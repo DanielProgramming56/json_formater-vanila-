@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    width: 100vw;
+  }
+ 
+
+  header {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: static;
+  }
+
+  header > h1{
+    cursor: pointer;
+   
+  }
+  
+  main{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+  }
+ 
+    button {
+      padding: 8px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      width: 7em;
+      border-radius: 10px;
+      transition: ease 0.5s;
+    }
+    button:hover{
+      opacity: 0.7;
+    }
+  
+textarea{
+  width: 35em;
+  height: 15em;
+  padding: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
+  resize: vertical;
+  overflow: hidden;
+}
+
+textarea:focus{
+  border: #4caf50 1.5px solid;
+}
+
+form{
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.display{
+  background-color: rgb(228, 220, 220);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.display > h1{
+  font-size: 2em;
+}
+
+/* Responsivness */
+@media screen and (max-width: 730px ) {
+  header > h1{
+    font-size: medium;
+  }
+
+  main{
+    padding: none;
+    flex-direction: column;
+  }
+
+  form{
+    width: auto;
+    align-items: flex-start;
+  }
+  textarea{
+    width: 100%;
+  }
+}
+  

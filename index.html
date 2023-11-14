@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>JSON Formatter</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+        <h1>JSON <span style="color: #4caf50;">FORMATER</span></h1>
+    </header>
+    <main>
+        <form id="jsonForm">
+            <textarea id="jsonTextarea" placeholder="Json value..."></textarea>
+            <button type="button" onclick="resquest()">Format</button>
+        </form>
+        <div class="display">
+            <h1>Formated Value </h1>
+            <div id="display-value">
+              
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
